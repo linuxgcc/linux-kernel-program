@@ -63,7 +63,7 @@ int thread_function1(void *pv)
             pr_info("Spinlock is locked in Thread Function1\n");
         }
         etx_global_variable++;
-        pr_info("In EmbeTronicX Thread Function1 %lu\n", etx_global_variable)		
+        pr_info("In EmbeTronicX Thread Function1 %lu\n", etx_global_variable);
         spin_unlock(&etx_spinlock);
         msleep(1000);
     }
